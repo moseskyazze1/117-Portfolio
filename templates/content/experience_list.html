@@ -8,24 +8,22 @@
     <h2>Experience/Education</h2>
 
     <div class="experience-list center-row">
-        <div class="experience-card">
 
+      {% for experience in experiences %}
+        <div class="experience-card">
+            <P>{{ experience.name }}</P>
+            <P>{{ experience.title }}</P>
+            <p>{{ experience.description }}</p>
+            <p>{{ experience.period }}</p>
             
-            
-            <P>San Diego GKU</P>
-            <P>Fullstack</P>
-            <p>I have extensive experience in software engineering, focusing on developing scalable applications and optimizing system performance. My work spans web and mobile projects, where I collaborate with teams to deliver robust solutions that enhance user engagement and drive business success.</p>
-            <p> JANUARY/02/2024</p>
             <div class="experience-skills">
-                <label class="text-label">HTML</label>
-                <label class="text-label">CSS</label>
-                <label class="text-label">JAVASCRIPT</label>
-                <label class="text-label">PYTHON</label>
-                <label class="text-label">DJANGO</label>
+                {% for skill in experience.skills.all %}
+                <label class="text-label">{{ skill.name }}</label>
+                {% endfor %}
             </div>
         
         </div>
-
+      {% endfor %}
     </div>
     
 </section>

@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from pages.views import home_view, about_view
+from pages.views import home_view, about_view, contact_view
 
 
 urlpatterns = [
@@ -24,5 +24,6 @@ urlpatterns = [
     path('', about_view, name='about'),  # Redirect root URL to home view
     path('home/', home_view, name='home'),  # Home page
 
+    path('contact/', contact_view, name='contact'),
     path("content/", include("content.urls")),
 ]

@@ -94,13 +94,13 @@ a p:nth-child(4) {
     padding: 40px 15px;
     background-color: #302d2d;
     border-radius: 8px;
-    max-width: 600px;
+    max-width: 1200px;
     margin: auto;
 }
 
 .experience-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem;
 }
 
@@ -110,8 +110,13 @@ a p:nth-child(4) {
     border-radius: 8px;
     padding: 20px;
     margin: 15px 0;
+    height: 600px ;
     width: 100%;
     max-width: 500px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .experience-card:hover {
@@ -148,3 +153,37 @@ a p:nth-child(4) {
     font-style: italic;
     letter-spacing: 0.5rem;
 } 
+
+.contact-section #emailForm {
+    padding: 40px 15px;
+    background-color: #302d2d;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .contact-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .contact-section p {
+    margin-bottom: 1rem;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 1rem;
+  }
+  .contact-section h2 span {
+    color:aqua;
+    font-family: inherit;
+  }
+  
