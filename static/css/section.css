@@ -1,5 +1,9 @@
 .about-section {
-    padding: 2%;
+    padding: 40px 15px;
+    background-color: #302d2d;
+    border-radius: 8px;
+    
+    margin: auto;;
 }
 
 .about-image-container img {
